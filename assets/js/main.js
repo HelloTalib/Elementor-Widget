@@ -24,7 +24,7 @@
                             rotate: 50, // Slide rotate in degrees
                             stretch: 0, // Stretch space between slides (in px)
                             depth: 100, // Depth offset in px (slides translate in Z axis)
-                            modifier: 5, // Effect multipler
+                            modifier: 1, // Effect multipler
                             slideShadows: true, // Enables slides shadows
                         },
                         flipEffect: {
