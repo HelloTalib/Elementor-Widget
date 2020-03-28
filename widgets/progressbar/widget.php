@@ -129,7 +129,7 @@ class Progressbar_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_style_section_value',
 			array(
-				'label' => __( 'Value', 'dom' ),
+				'label' => __( 'Title', 'dom' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);

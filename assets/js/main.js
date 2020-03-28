@@ -8,21 +8,31 @@
         elementorFrontend.hooks.addAction("frontend/element_ready/swiperSlider.default", function ($scope) {
             $scope.find('.swiper-container').each(function () {
                 var swiper_container = $(this)[0];
+                var swiper_effect = $(this).data('swiper_effect'); 
+                var slider_autoplay = $(this).data('slider_autoplay'); 
                 var sliderSelector = swiper_container,
                     options = {
                         init: false,
                         loop: true,
+                        autoplay: slider_autoplay,
                         speed: 800,
                         slidesPerView: 2, // or 'auto'
                         // spaceBetween: 10,
                         centeredSlides: true,
-                        effect: 'coverflow', // 'cube', 'fade', 'coverflow',
+                        effect: swiper_effect ? swiper_effect : 'coverflow', // 'cube', 'fade', 'coverflow', 'flip',
                         coverflowEffect: {
                             rotate: 50, // Slide rotate in degrees
                             stretch: 0, // Stretch space between slides (in px)
                             depth: 100, // Depth offset in px (slides translate in Z axis)
-                            modifier: 1, // Effect multipler
+                            modifier: 5, // Effect multipler
                             slideShadows: true, // Enables slides shadows
+                        },
+                        flipEffect: {
+                            rotate: 50, // Slide rotate in degrees
+                            stretch: 0, // Stretch space between slides (in px)
+                            depth: 100, // Depth offset in px (slides translate in Z axis)
+                            modifier: 1, // Effect multipler
+                            slideShadows: false, // Enables slides shadows
                         },
                         grabCursor: true,
                         parallax: true,
