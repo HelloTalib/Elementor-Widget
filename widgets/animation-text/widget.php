@@ -9,7 +9,7 @@ class AnimationText_Widget extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'AnimationText', 'dom' );
+		return __( 'AnimationText', 'bd-webninja' );
 	}
 
 	public function get_icon() {
@@ -24,7 +24,7 @@ class AnimationText_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			array(
-				'label' => __( 'Animation Text', 'dom' ),
+				'label' => __( 'Animation Text', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_CONTENT,
 			)
 		);
@@ -32,10 +32,10 @@ class AnimationText_Widget extends Widget_Base {
 		$this->add_control(
 			'normal_text',
 			array(
-				'label'       => __( 'Normal Text', 'dom' ),
+				'label'       => __( 'Normal Text', 'bd-webninja' ),
 				'type'        => Controls_Manager::TEXT,
-				'default'     => __( 'We are ', 'dom' ),
-				'placeholder' => __( 'We are', 'dom' ),
+				'default'     => __( 'We are ', 'bd-webninja' ),
+				'placeholder' => __( 'We are', 'bd-webninja' ),
 			)
 		);
 
@@ -43,20 +43,20 @@ class AnimationText_Widget extends Widget_Base {
 		$repeater->add_control(
 			'animation_text',
 			array(
-				'label'   => __( 'Animation Text', 'dom' ),
+				'label'   => __( 'Animation Text', 'bd-webninja' ),
 				'type'    => Controls_Manager::TEXT,
-				'default' => __( 'Designer', 'dom' ),
+				'default' => __( 'Designer', 'bd-webninja' ),
 			)
 		);
 		$this->add_control(
 			'animation_text_list',
 			array(
-				'label'       => __( 'Animation Text List', 'dom' ),
+				'label'       => __( 'Animation Text List', 'bd-webninja' ),
 				'type'        => Controls_Manager::REPEATER,
 				'fields'      => $repeater->get_controls(),
 				'default'     => array(
 					array(
-						'default' => __( 'Designer', 'dom' ),
+						'default' => __( 'Designer', 'bd-webninja' ),
 					),
 				),
 				'title_field' => '{{{ animation_text }}}',

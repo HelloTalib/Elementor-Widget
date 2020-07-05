@@ -1,23 +1,23 @@
 <?php
 /*
-* Plugin Name: Elementor widget
+* Plugin Name: BD WEBNINJA
 * Plugin URI: https://talib.netlify.com
 * Description: Elementor Extension widget Series
 * Version: 1.0.0
 * Author: TALIB
-* Author URI: https://talib.netlify.com.com
+* Author URI: https://bdwebninja.com
 * License: GPLv2 or later
-* Text Domain: elementor-widget
+* Text Domain: bd-webninja
 * Domain Path: /languages/
  */
 
 namespace Elementor;
 
 if ( ! defined( 'ABSPATH' ) ) {
-	die( __( 'Direct Access is not allowed', 'elementor-widget' ) );
+	die( __( 'Direct Access is not allowed', 'bd-webninja' ) );
 }
 
-final class Init_Elementor_Extension {
+final class BD_WebNinja_Elementor_Extension {
 
 
 	const VERSION                   = '1.0.0';
@@ -44,9 +44,9 @@ final class Init_Elementor_Extension {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-widget' ),
-			'<strong>' . esc_html__( 'Talib Elementor AddOn', 'elementor-widget' ) . '</strong>',
-			'<strong>' . esc_html__( 'PHP', 'elementor-widget' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'bd-webninja' ),
+			'<strong>' . esc_html__( 'BD WEBNINJA Elementor Addons', 'bd-webninja' ) . '</strong>',
+			'<strong>' . esc_html__( 'PHP', 'bd-webninja' ) . '</strong>',
 			self::MINIMUM_PHP_VERSION
 		);
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
@@ -59,9 +59,9 @@ final class Init_Elementor_Extension {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-widget' ),
-			'<strong>' . esc_html__( 'Talib Elementor AddOn', 'elementor-widget' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'elementor-widget' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'bd-webninja' ),
+			'<strong>' . esc_html__( 'BD WEBNINJA Elementor Addons', 'bd-webninja' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'bd-webninja' ) . '</strong>',
 			self::MINIMUM_ELEMENTOR_VERSION
 		);
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
@@ -74,14 +74,14 @@ final class Init_Elementor_Extension {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor */
-			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'elementor-widget' ),
-			'<strong>' . esc_html__( 'Talib Elementor AddOn', 'elementor-widget' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'elementor-widget' ) . '</strong>'
+			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'bd-webninja' ),
+			'<strong>' . esc_html__( 'BD WEBNINJA Elementor Addons', 'bd-webninja' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'bd-webninja' ) . '</strong>'
 		);
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
 	}
 	public function init() {
-		load_plugin_textdomain( 'elementor-widget', false, plugin_dir_path( __FILE__ ) . '/languages' );
+		load_plugin_textdomain( 'bd-webninja', false, plugin_dir_path( __FILE__ ) . '/languages' );
 
 		// Check if Elementor installed and activated
 		if ( ! did_action( 'elementor/loaded' ) ) {
@@ -110,7 +110,7 @@ final class Init_Elementor_Extension {
 		$elements_manager->add_category(
 			'talib',
 			array(
-				'title' => __( 'Talib', 'elementor-widget' ),
+				'title' => __( 'Talib', 'bd-webninja' ),
 				'icon'  => 'fa fa-code',
 			)
 		);
@@ -159,4 +159,4 @@ final class Init_Elementor_Extension {
 
 	}
 }
-Init_Elementor_Extension::instance();
+BD_WebNinja_Elementor_Extension::instance();

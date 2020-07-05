@@ -9,7 +9,7 @@ class Counter_Widget extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Counter', 'dom' );
+		return __( 'Counter', 'bd-webninja' );
 	}
 
 	public function get_icon() {
@@ -24,7 +24,7 @@ class Counter_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			array(
-				'label' => __( 'Content', 'dom' ),
+				'label' => __( 'Content', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_CONTENT,
 			)
 		);
@@ -32,17 +32,17 @@ class Counter_Widget extends Widget_Base {
 		$this->add_control(
 			'title',
 			array(
-				'label'       => __( 'Title', 'dom' ),
+				'label'       => __( 'Title', 'bd-webninja' ),
 				'type'        => Controls_Manager::TEXT,
 				'default'     => 'Web Development',
-				'placeholder' => __( 'Web Development', 'dom' ),
+				'placeholder' => __( 'Web Development', 'bd-webninja' ),
 			)
 		);
 
 		$this->add_control(
 			'counter_value',
 			array(
-				'label'   => __( 'Counter Value', 'dom' ),
+				'label'   => __( 'Counter Value', 'bd-webninja' ),
 				'type'    => Controls_Manager::NUMBER,
 				'default' => 999,
 			)
@@ -52,14 +52,14 @@ class Counter_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_style_section_content',
 			array(
-				'label' => __( 'Content', 'dom' ),
+				'label' => __( 'Content', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 		$this->add_control(
 			'_content_backgorund_heading',
 			array(
-				'label'     => __( 'Content', 'dom' ),
+				'label'     => __( 'Content', 'bd-webninja' ),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			)
@@ -68,7 +68,7 @@ class Counter_Widget extends Widget_Base {
 			Group_Control_Background::get_type(),
 			array(
 				'name'     => 'content_background',
-				'label'    => __( 'Background', 'dom' ),
+				'label'    => __( 'Background', 'bd-webninja' ),
 				'types'    => array( 'classic', 'gradient' ),
 				'selector' => '{{WRAPPER}} .counter',
 
@@ -77,7 +77,7 @@ class Counter_Widget extends Widget_Base {
 		$this->add_control(
 			'_Shape_backgorund_heading',
 			array(
-				'label'     => __( 'Shape Color', 'dom' ),
+				'label'     => __( 'Shape Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			)
@@ -86,7 +86,7 @@ class Counter_Widget extends Widget_Base {
 			Group_Control_Background::get_type(),
 			array(
 				'name'     => 'shape_background',
-				'label'    => __( 'Background', 'dom' ),
+				'label'    => __( 'Background', 'bd-webninja' ),
 				'types'    => array( 'classic', 'gradient' ),
 				'selector' => '{{WRAPPER}} .counter:before',
 				'separator' => 'after'
@@ -95,7 +95,7 @@ class Counter_Widget extends Widget_Base {
 		$this->add_responsive_control(
 			'content_margin',
 			array(
-				'label'      => __( 'Margin', 'dom' ),
+				'label'      => __( 'Margin', 'bd-webninja' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( '%', 'px' ),
 				'range'      => array(
@@ -116,7 +116,7 @@ class Counter_Widget extends Widget_Base {
 		$this->add_responsive_control(
 			'content_radius',
 			array(
-				'label'      => __( 'Border Radius', 'dom' ),
+				'label'      => __( 'Border Radius', 'bd-webninja' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( '%', 'px' ),
 				'range'      => array(
@@ -138,14 +138,14 @@ class Counter_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_style_section_title',
 			array(
-				'label' => __( 'Title', 'dom' ),
+				'label' => __( 'Title', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 		$this->add_control(
 			'title_color',
 			array(
-				'label'     => __( 'Text Color', 'dom' ),
+				'label'     => __( 'Text Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .title' => 'color:{{VALUE}}',
@@ -156,7 +156,7 @@ class Counter_Widget extends Widget_Base {
 				Group_Control_Background::get_type(),
 				array(
 					'name'     => 'title_background',
-					'label'    => __( 'Background', 'dom' ),
+					'label'    => __( 'Background', 'bd-webninja' ),
 					'types'    => array( 'classic', 'gradient' ),
 					'selector' => '{{WRAPPER}} .counter h3',
 				)
@@ -166,7 +166,7 @@ class Counter_Widget extends Widget_Base {
 			Group_Control_Border::get_type(),
 			array(
 				'name'     => 'title_border',
-				'label'    => __( 'Border', 'dom' ),
+				'label'    => __( 'Border', 'bd-webninja' ),
 				'selector' => '{{WRAPPER}} .counter h3',
 			)
 		);
@@ -175,7 +175,7 @@ class Counter_Widget extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'title_typography',
-				'label'    => __( 'Typography', 'dom' ),
+				'label'    => __( 'Typography', 'bd-webninja' ),
 				'scheme'   => Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .title',
 			)
@@ -184,7 +184,7 @@ class Counter_Widget extends Widget_Base {
 			Group_Control_Text_Shadow::get_type(),
 			array(
 				'name'     => 'title_shadow',
-				'label'    => __( 'Text Shadow', 'dom' ),
+				'label'    => __( 'Text Shadow', 'bd-webninja' ),
 				'selector' => '{{WRAPPER}} .title',
 			)
 		);
@@ -192,14 +192,14 @@ class Counter_Widget extends Widget_Base {
 			$this->start_controls_section(
 				'_style_section_counter',
 				array(
-					'label' => __( 'Counter', 'dom' ),
+					'label' => __( 'Counter', 'bd-webninja' ),
 					'tab'   => Controls_Manager::TAB_STYLE,
 				)
 			);
 		$this->add_control(
 			'counter_color',
 			array(
-				'label'     => __( 'Text Color', 'dom' ),
+				'label'     => __( 'Text Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .counter-value' => 'color:{{VALUE}}',
@@ -210,7 +210,7 @@ class Counter_Widget extends Widget_Base {
 			Group_Control_Background::get_type(),
 			array(
 				'name'     => 'counter_background',
-				'label'    => __( 'Background', 'dom' ),
+				'label'    => __( 'Background', 'bd-webninja' ),
 				'types'    => array( 'classic', 'gradient' ),
 				'selector' => '{{WRAPPER}} .counter .counter-content',
 			)
@@ -219,7 +219,7 @@ class Counter_Widget extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'counter_typography',
-				'label'    => __( 'Typography', 'dom' ),
+				'label'    => __( 'Typography', 'bd-webninja' ),
 				'scheme'   => Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .counter-value',
 			)
@@ -228,7 +228,7 @@ class Counter_Widget extends Widget_Base {
 			Group_Control_Text_Shadow::get_type(),
 			array(
 				'name'     => 'counter_shadow',
-				'label'    => __( 'Text Shadow', 'dom' ),
+				'label'    => __( 'Text Shadow', 'bd-webninja' ),
 				'selector' => '{{WRAPPER}} .counter-value',
 			)
 		);

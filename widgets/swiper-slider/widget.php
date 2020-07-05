@@ -9,7 +9,7 @@ class SwiperSlider_Widget extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Swiper Slider', 'dom' );
+		return __( 'Swiper Slider', 'bd-webninja' );
 	}
 
 	public function get_icon() {
@@ -24,7 +24,7 @@ class SwiperSlider_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			array(
-				'label' => __( 'Slider List', 'dom' ),
+				'label' => __( 'Slider List', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_CONTENT,
 			)
 		);
@@ -33,7 +33,7 @@ class SwiperSlider_Widget extends Widget_Base {
 		$repater->add_control(
 			'image',
 			array(
-				'label'   => __( 'Choose Image', 'dom' ),
+				'label'   => __( 'Choose Image', 'bd-webninja' ),
 				'type'    => Controls_Manager::MEDIA,
 				'default' => array(
 					'url' => Utils::get_placeholder_image_src(),
@@ -53,34 +53,34 @@ class SwiperSlider_Widget extends Widget_Base {
 		$repater->add_control(
 			'swiper_slider_title',
 			array(
-				'label'   => __( 'Slider title', 'dom' ),
+				'label'   => __( 'Slider title', 'bd-webninja' ),
 				'type'    => Controls_Manager::TEXT,
-				'default' => __( 'Title', 'dom' ),
+				'default' => __( 'Title', 'bd-webninja' ),
 			)
 		);
 		$repater->add_control(
 			'swiper_slider_desc',
 			array(
-				'label'   => __( 'Slider Description', 'dom' ),
+				'label'   => __( 'Slider Description', 'bd-webninja' ),
 				'type'    => Controls_Manager::TEXTAREA,
-				'default' => __( 'Description', 'dom' ),
+				'default' => __( 'Description', 'bd-webninja' ),
 			)
 		);
 		$this->add_control(
 			'slider_list',
 			array(
-				'label'       => __( 'Slider List', 'dom' ),
+				'label'       => __( 'Slider List', 'bd-webninja' ),
 				'show_label'  => false,
 				'type'        => Controls_Manager::REPEATER,
 				'fields'      => $repater->get_controls(),
 				'default'     => array(
 					array(
-						'swiper_slider_title' => __( 'Title', 'dom' ),
-						'swiper_slider_desc'  => __( 'Swiper Slider desc', 'dom' ),
+						'swiper_slider_title' => __( 'Title', 'bd-webninja' ),
+						'swiper_slider_desc'  => __( 'Swiper Slider desc', 'bd-webninja' ),
 					),
 					array(
-						'swiper_slider_title' => __( 'Title', 'dom' ),
-						'swiper_slider_desc'  => __( 'Swiper Slider desc', 'dom' ),
+						'swiper_slider_title' => __( 'Title', 'bd-webninja' ),
+						'swiper_slider_desc'  => __( 'Swiper Slider desc', 'bd-webninja' ),
 					),
 				),
 				'title_field' => '{{{swiper_slider_title}}}',
@@ -91,20 +91,20 @@ class SwiperSlider_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_content_section_swiper_effect',
 			array(
-				'label' => __( 'Slider Effect', 'dom' ),
+				'label' => __( 'Slider Effect', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_CONTENT,
 			)
 		);
 		$this->add_control(
 			'swiper_effect',
 			array(
-				'label'   => __( 'Slider Effect', 'dom' ),
+				'label'   => __( 'Slider Effect', 'bd-webninja' ),
 				'type'    => Controls_Manager::SELECT,
 				'options' => array(
-					'cube'      => __( 'Cube', 'dom' ),
-					'fade'      => __( 'Fade', 'dom' ),
-					'flip'      => __( 'Flip', 'dom' ),
-					'coverflow' => __( 'Coverflow', 'dom' ),
+					'cube'      => __( 'Cube', 'bd-webninja' ),
+					'fade'      => __( 'Fade', 'bd-webninja' ),
+					'flip'      => __( 'Flip', 'bd-webninja' ),
+					'coverflow' => __( 'Coverflow', 'bd-webninja' ),
 				),
 				'default' => 'coverflow',
 				'dynamic' => array( 'active' => true ),
@@ -114,14 +114,14 @@ class SwiperSlider_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_section_style_layout',
 			array(
-				'label' => __( 'Layout', 'dom' ),
+				'label' => __( 'Layout', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 		$this->add_control(
 			'layout_width',
 			array(
-				'label'      => __( 'Width', 'dom' ),
+				'label'      => __( 'Width', 'bd-webninja' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', '%', 'vw' ),
 				'range'      => array(
@@ -150,7 +150,7 @@ class SwiperSlider_Widget extends Widget_Base {
 		$this->add_control(
 			'layout_height',
 			array(
-				'label'      => __( 'Height', 'dom' ),
+				'label'      => __( 'Height', 'bd-webninja' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', '%', 'vh' ),
 				'range'      => array(
@@ -180,7 +180,7 @@ class SwiperSlider_Widget extends Widget_Base {
 		$this->add_control(
 			'show_nav',
 			array(
-				'label'        => __( 'Nav', 'dom' ),
+				'label'        => __( 'Nav', 'bd-webninja' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'label_on'     => __( 'Show', 'swiper-slider' ),
 				'label_off'    => __( 'Hide', 'swiper-slider' ),
@@ -191,7 +191,7 @@ class SwiperSlider_Widget extends Widget_Base {
 		$this->add_control(
 			'show_pagination',
 			array(
-				'label'        => __( 'Pagination', 'dom' ),
+				'label'        => __( 'Pagination', 'bd-webninja' ),
 				'type'         => Controls_Manager::SWITCHER,
 				'label_on'     => __( 'Show', 'swiper-slider' ),
 				'label_off'    => __( 'Hide', 'swiper-slider' ),
@@ -203,7 +203,7 @@ class SwiperSlider_Widget extends Widget_Base {
 		$this->add_control(
 				   'slider_autoplay',
 				   [
-					   'label'         => __( 'Autoplay', 'dom' ),
+					   'label'         => __( 'Autoplay', 'bd-webninja' ),
 					   'type'          => Controls_Manager::SWITCHER,
 					   'label_on'      => __( 'Yes', 'swiper_slider' ),
 					   'label_off'     => __( 'No', 'swiper_slider' ),

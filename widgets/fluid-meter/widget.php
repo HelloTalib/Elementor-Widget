@@ -9,7 +9,7 @@ class FluidMeter_Widget extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Fluid Meter', 'dom' );
+		return __( 'Fluid Meter', 'bd-webninja' );
 	}
 
 	public function get_icon() {
@@ -25,7 +25,7 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'content_section_fluid_meter',
 			array(
-				'label' => __( 'Fluid Meter', 'dom' ),
+				'label' => __( 'Fluid Meter', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_CONTENT,
 			)
 		);
@@ -33,16 +33,16 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->add_control(
 			'title',
 			array(
-				'label'   => __( 'Title', 'dom' ),
+				'label'   => __( 'Title', 'bd-webninja' ),
 				'type'    => Controls_Manager::TEXT,
-				'default' => __( 'HTML5', 'dom' ),
+				'default' => __( 'HTML5', 'bd-webninja' ),
 			)
 		);
 
 		$this->add_control(
 			'percentage',
 			array(
-				'label' => __( 'Fill Percentage', 'dom' ),
+				'label' => __( 'Fill Percentage', 'bd-webninja' ),
 				'type'  => Controls_Manager::NUMBER,
 				'min'   => 0,
 				'max'   => 100,
@@ -53,7 +53,7 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->add_control(
 			'content_size',
 			array(
-				'label' => __( 'Fluid Meter Width', 'dom' ),
+				'label' => __( 'Fluid Meter Width', 'bd-webninja' ),
 				'type'  => Controls_Manager::NUMBER,
 				'min'   => 250,
 				'max'   => 650,
@@ -63,7 +63,7 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->add_control(
 			'border_width',
 			array(
-				'label' => __( 'Border Width', 'dom' ),
+				'label' => __( 'Border Width', 'bd-webninja' ),
 				'type'  => Controls_Manager::NUMBER,
 				'min'   => 2,
 				'max'   => 26,
@@ -73,7 +73,7 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->add_control(
 			'_fluid_meter_value',
 			array(
-				'label'     => __( 'Value', 'dom' ),
+				'label'     => __( 'Value', 'bd-webninja' ),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			)
@@ -81,7 +81,7 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->add_control(
 			'font_size',
 			array(
-				'label' => __( 'Font Size(px)', 'dom' ),
+				'label' => __( 'Font Size(px)', 'bd-webninja' ),
 				'type'  => Controls_Manager::NUMBER,
 				'min'   => 16,
 				'max'   => 100,
@@ -91,7 +91,7 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->add_control(
 			'font_family',
 			array(
-				'label' => __( 'Font Family', 'dom' ),
+				'label' => __( 'Font Family', 'bd-webninja' ),
 				'type'  => Controls_Manager::FONT,
 			)
 		);
@@ -99,7 +99,7 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->add_control(
 			'title_heading',
 			array(
-				'label'     => __( 'Title', 'dom' ),
+				'label'     => __( 'Title', 'bd-webninja' ),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			)
@@ -107,7 +107,7 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->add_responsive_control(
 			'title_padding',
 			array(
-				'label'      => __( 'Padding', 'dom' ),
+				'label'      => __( 'Padding', 'bd-webninja' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => array( 'px', 'em', '%' ),
 				'selectors'  => array(
@@ -118,31 +118,31 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->add_control(
 			'header_tag',
 			array(
-				'label'   => __( 'H tag', 'dom' ),
+				'label'   => __( 'H tag', 'bd-webninja' ),
 				'type'    => Controls_Manager::CHOOSE,
 				'options' => array(
 					'h1' => array(
-						'label' => __( 'H1', 'dom' ),
+						'label' => __( 'H1', 'bd-webninja' ),
 						'icon'  => 'eicon-editor-h1',
 					),
 					'h2' => array(
-						'label' => __( 'H2', 'dom' ),
+						'label' => __( 'H2', 'bd-webninja' ),
 						'icon'  => 'eicon-editor-h2',
 					),
 					'h3' => array(
-						'label' => __( 'H3', 'dom' ),
+						'label' => __( 'H3', 'bd-webninja' ),
 						'icon'  => 'eicon-editor-h3',
 					),
 					'h4' => array(
-						'label' => __( 'H4', 'dom' ),
+						'label' => __( 'H4', 'bd-webninja' ),
 						'icon'  => 'eicon-editor-h4',
 					),
 					'h5' => array(
-						'label' => __( 'H5', 'dom' ),
+						'label' => __( 'H5', 'bd-webninja' ),
 						'icon'  => 'eicon-editor-h5',
 					),
 					'h6' => array(
-						'label' => __( 'H6', 'dom' ),
+						'label' => __( 'H6', 'bd-webninja' ),
 						'icon'  => 'eicon-editor-h6',
 					),
 				),
@@ -155,14 +155,14 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_style_section_title',
 			array(
-				'label' => __( 'Title', 'dom' ),
+				'label' => __( 'Title', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 		$this->add_control(
 			'title_color',
 			array(
-				'label'     => __( 'Color', 'dom' ),
+				'label'     => __( 'Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .fluid-title' => 'color:{{VALUE}};',
@@ -173,7 +173,7 @@ class FluidMeter_Widget extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'title_typography',
-				'label'    => __( 'Typography', 'dom' ),
+				'label'    => __( 'Typography', 'bd-webninja' ),
 				'scheme'   => Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .fluid-title',
 			)
@@ -182,7 +182,7 @@ class FluidMeter_Widget extends Widget_Base {
 			Group_Control_Text_Shadow::get_type(),
 			array(
 				'name'     => 'title_shadow',
-				'label'    => __( 'Shadow', 'dom' ),
+				'label'    => __( 'Shadow', 'bd-webninja' ),
 				'selector' => '{{WRAPPER}} .fluid-title',
 			)
 		);
@@ -190,21 +190,21 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_style_section_content_color',
 			array(
-				'label' => __( 'Fluid Meter', 'dom' ),
+				'label' => __( 'Fluid Meter', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 		$this->add_control(
 			'content_text_color',
 			array(
-				'label' => __( 'Text Color', 'dom' ),
+				'label' => __( 'Text Color', 'bd-webninja' ),
 				'type'  => Controls_Manager::COLOR,
 			)
 		);
 		$this->add_control(
 			'content_background',
 			array(
-				'label' => __( 'Background Color', 'dom' ),
+				'label' => __( 'Background Color', 'bd-webninja' ),
 				'type'  => Controls_Manager::COLOR,
 			)
 		);
@@ -212,7 +212,7 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->add_control(
 			'content_border_color',
 			array(
-				'label' => __( 'Border Color', 'dom' ),
+				'label' => __( 'Border Color', 'bd-webninja' ),
 				'type'  => Controls_Manager::COLOR,
 			)
 		);
@@ -220,21 +220,21 @@ class FluidMeter_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_style_section_layer_color',
 			array(
-				'label' => __( 'Fluid Layer', 'dom' ),
+				'label' => __( 'Fluid Layer', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 		$this->add_control(
 			'layer_foreground',
 			array(
-				'label' => __( 'Foreground Color', 'dom' ),
+				'label' => __( 'Foreground Color', 'bd-webninja' ),
 				'type'  => Controls_Manager::COLOR,
 			)
 		);
 		$this->add_control(
 			'layer_background',
 			array(
-				'label' => __( 'Background Color', 'dom' ),
+				'label' => __( 'Background Color', 'bd-webninja' ),
 				'type'  => Controls_Manager::COLOR,
 			)
 		);
@@ -242,14 +242,14 @@ class FluidMeter_Widget extends Widget_Base {
 		// $this->start_controls_section(
 		// '_style_section_optional',
 		// [
-		// 'label' => __('Settings', 'dom'),
+		// 'label' => __('Settings', 'bd-webninja'),
 		// 'tab' => Controls_Manager::TAB_STYLE,
 		// ]
 		// );
 		// $this->add_control(
 		// 'show_percentage',
 		// [
-		// 'label' => __( 'Show Percentage', 'dom' ),
+		// 'label' => __( 'Show Percentage', 'bd-webninja' ),
 		// 'type' => \Elementor\Controls_Manager::SWITCHER,
 		// 'label_on' => __( 'Show', 'fluid-meter' ),
 		// 'label_off' => __( 'Hide', 'fluid-meter' ),

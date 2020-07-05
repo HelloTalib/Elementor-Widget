@@ -9,7 +9,7 @@ class Progressbar_Widget extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Progressbar', 'dom' );
+		return __( 'Progressbar', 'bd-webninja' );
 	}
 
 	public function get_icon() {
@@ -24,7 +24,7 @@ class Progressbar_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			array(
-				'label' => __( 'Progressbar', 'dom' ),
+				'label' => __( 'Progressbar', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_CONTENT,
 			)
 		);
@@ -32,16 +32,16 @@ class Progressbar_Widget extends Widget_Base {
 		$repeater->add_control(
 			'title',
 			array(
-				'label'       => __( 'Title', 'dom' ),
+				'label'       => __( 'Title', 'bd-webninja' ),
 				'type'        => Controls_Manager::TEXT,
-				'default'     => __('HTML5', 'dom'),
-				'placeholder' => __( 'html5', 'dom' ),
+				'default'     => __('HTML5', 'bd-webninja'),
+				'placeholder' => __( 'html5', 'bd-webninja' ),
 			)
 		);
 		$repeater->add_control(
 			'progressbar',
 			array(
-				'label'   => __( 'Progress Value', 'dom' ),
+				'label'   => __( 'Progress Value', 'bd-webninja' ),
 				'type'    => Controls_Manager::NUMBER,
 				'default' => 85,
 			)
@@ -49,12 +49,12 @@ class Progressbar_Widget extends Widget_Base {
 		$this->add_control(
 			'progress_list',
 			array(
-				'label'       => __( 'Progressbar List', 'dom' ),
+				'label'       => __( 'Progressbar List', 'bd-webninja' ),
 				'type'        => Controls_Manager::REPEATER,
 				'fields'      => $repeater->get_controls(),
 				'default'     => array(
 					array(
-						'Title'          => __( 'html5', 'dom' ),
+						'Title'          => __( 'html5', 'bd-webninja' ),
 						'Progress Value' => 85,
 					),
 				),
@@ -65,14 +65,14 @@ class Progressbar_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_style_section_title',
 			array(
-				'label' => __( 'Title', 'dom' ),
+				'label' => __( 'Title', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 		$this->add_control(
 			'title_color',
 			array(
-				'label'     => __( 'Color', 'dom' ),
+				'label'     => __( 'Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .progress-title' => 'color:{{VALUE}};',
@@ -83,7 +83,7 @@ class Progressbar_Widget extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'title_typography',
-				'label'    => __( 'Typography', 'dom' ),
+				'label'    => __( 'Typography', 'bd-webninja' ),
 				'scheme'   => Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .progress-title',
 			)
@@ -92,7 +92,7 @@ class Progressbar_Widget extends Widget_Base {
 			Group_Control_Text_Shadow::get_type(),
 			array(
 				'name'     => 'title_shadow',
-				'label'    => __( 'Shadow', 'dom' ),
+				'label'    => __( 'Shadow', 'bd-webninja' ),
 				'selector' => '{{WRAPPER}} .progress-title',
 			)
 		);
@@ -100,14 +100,14 @@ class Progressbar_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_style_section_bar',
 			array(
-				'label' => __( 'Bar', 'dom' ),
+				'label' => __( 'Bar', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 		$this->add_control(
 			'bar_color',
 			array(
-				'label'     => __( 'Color', 'dom' ),
+				'label'     => __( 'Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .progress' => 'background: {{VALUE}};',
@@ -118,7 +118,7 @@ class Progressbar_Widget extends Widget_Base {
 		$this->add_control(
 			'bar_color_border',
 			array(
-				'label'     => __( 'Border Color', 'dom' ),
+				'label'     => __( 'Border Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .progress .progress-bar:before' => 'border-top: 10px double {{VALUE}};',
@@ -129,14 +129,14 @@ class Progressbar_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_style_section_value',
 			array(
-				'label' => __( 'Title', 'dom' ),
+				'label' => __( 'Title', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 		$this->add_control(
 			'value_color',
 			array(
-				'label'     => __( 'Color', 'dom' ),
+				'label'     => __( 'Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .progress-value' => 'color:{{VALUE}};',
@@ -147,7 +147,7 @@ class Progressbar_Widget extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'value_typography',
-				'label'    => __( 'Typography', 'dom' ),
+				'label'    => __( 'Typography', 'bd-webninja' ),
 				'scheme'   => Scheme_Typography::TYPOGRAPHY_2,
 				'selector' => '{{WRAPPER}} .progress-value',
 			)
@@ -156,7 +156,7 @@ class Progressbar_Widget extends Widget_Base {
 			Group_Control_Text_Shadow::get_type(),
 			array(
 				'name'     => 'value_shadow',
-				'label'    => __( 'Shadow', 'dom' ),
+				'label'    => __( 'Shadow', 'bd-webninja' ),
 				'selector' => '{{WRAPPER}} .progress-value',
 			)
 		);

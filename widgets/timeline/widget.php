@@ -9,7 +9,7 @@ class Timeline_Widget extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Timeline', 'dom' );
+		return __( 'Timeline', 'bd-webninja' );
 	}
 
 	public function get_icon() {
@@ -24,7 +24,7 @@ class Timeline_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			array(
-				'label' => __( 'Timeline', 'dom' ),
+				'label' => __( 'Timeline', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_CONTENT,
 			)
 		);
@@ -32,25 +32,25 @@ class Timeline_Widget extends Widget_Base {
 		$repeater->add_control(
 			'year',
 			array(
-				'label'       => __( 'Year', 'dom' ),
+				'label'       => __( 'Year', 'bd-webninja' ),
 				'type'        => Controls_Manager::NUMBER,
-				'default'     => __( '2020', 'dom' ),
-				'placeholder' => __( 'Type year', 'dom' ),
+				'default'     => __( '2020', 'bd-webninja' ),
+				'placeholder' => __( 'Type year', 'bd-webninja' ),
 			)
 		);
 		$repeater->add_control(
 			'title',
 			array(
-				'label'       => __( 'Title', 'dom' ),
+				'label'       => __( 'Title', 'bd-webninja' ),
 				'type'        => Controls_Manager::TEXT,
-				'default'     => __( 'Web Development', 'dom' ),
-				'placeholder' => __( 'Type your title here', 'dom' ),
+				'default'     => __( 'Web Development', 'bd-webninja' ),
+				'placeholder' => __( 'Type your title here', 'bd-webninja' ),
 			)
 		);
 		$repeater->add_control(
 			'icon',
 			array(
-				'label'   => __( 'Icon', 'plugin-domain' ),
+				'label'   => __( 'Icon', 'plugin-bd-webninjaain' ),
 				'type'    => Controls_Manager::ICON,
 				'default' => 'fa fa-graduation-cap',
 			)
@@ -58,37 +58,37 @@ class Timeline_Widget extends Widget_Base {
 		$repeater->add_control(
 			'description',
 			array(
-				'label'       => __( 'Description', 'plugin-domain' ),
+				'label'       => __( 'Description', 'plugin-bd-webninjaain' ),
 				'type'        => Controls_Manager::TEXTAREA,
 				'rows'        => 5,
-				'default'     => __( 'Lorem ipsum dolor sit amet consectetur adipisicing elit.tenetur tempore, cupiditate possimus animi molestias modi voluptas autem ex aspernatur omnis labore, earum voluptatum. Assumenda!', 'plugin-domain' ),
-				'placeholder' => __( 'Type your Description here', 'plugin-domain' ),
+				'default'     => __( 'Lorem ipsum dolor sit amet consectetur adipisicing elit.tenetur tempore, cupiditate possimus animi molestias modi voluptas autem ex aspernatur omnis labore, earum voluptatum. Assumenda!', 'plugin-bd-webninjaain' ),
+				'placeholder' => __( 'Type your Description here', 'plugin-bd-webninjaain' ),
 			)
 		);
 		$this->add_control(
 			'timeline_list',
 			array(
-				'label'       => __( 'Timeline', 'dom' ),
+				'label'       => __( 'Timeline', 'bd-webninja' ),
 				'type'        => Controls_Manager::REPEATER,
 				'fields'      => $repeater->get_controls(),
 				'default'     => array(
                     array(
-                        'year'        => __('2020', 'dom'),
-                        'title'       => __( 'Web Development', 'dom' ),
-						'description' => __( 'Lorem ipsum dolor sit amet consectetur adipisicing elit.tenetur tempore, cupiditate possimus animi molestias modi voluptas autem ex aspernatur omnis labore, earum voluptatum. Assumenda!', 'dom' ),
-						'icon'        => __( 'fa fa-graduation-cap', 'dom' ),
+                        'year'        => __('2020', 'bd-webninja'),
+                        'title'       => __( 'Web Development', 'bd-webninja' ),
+						'description' => __( 'Lorem ipsum dolor sit amet consectetur adipisicing elit.tenetur tempore, cupiditate possimus animi molestias modi voluptas autem ex aspernatur omnis labore, earum voluptatum. Assumenda!', 'bd-webninja' ),
+						'icon'        => __( 'fa fa-graduation-cap', 'bd-webninja' ),
 					),
 					array(
-                        'year'        => __('2019', 'dom'),
-                        'title'       => __( 'Web Design', 'dom' ),
-						'description' => __( 'Lorem ipsum dolor sit amet consectetur adipisicing elit.tenetur tempore, cupiditate possimus animi molestias modi voluptas autem ex aspernatur omnis labore, earum voluptatum. Assumenda!', 'dom' ),
-						'icon'        => __( 'fa fa-graduation-cap', 'dom' ),
+                        'year'        => __('2019', 'bd-webninja'),
+                        'title'       => __( 'Web Design', 'bd-webninja' ),
+						'description' => __( 'Lorem ipsum dolor sit amet consectetur adipisicing elit.tenetur tempore, cupiditate possimus animi molestias modi voluptas autem ex aspernatur omnis labore, earum voluptatum. Assumenda!', 'bd-webninja' ),
+						'icon'        => __( 'fa fa-graduation-cap', 'bd-webninja' ),
 					),
 					array(
-                        'year'        => __('2018', 'dom'),
-						'title'       => __( 'Digital Marketing', 'dom' ),
-						'description' => __( 'Lorem ipsum dolor sit amet consectetur adipisicing elit.tenetur tempore, cupiditate possimus animi molestias modi voluptas autem ex aspernatur omnis labore, earum voluptatum. Assumenda!', 'dom' ),
-						'icon'        => __( 'fa fa-graduation-cap', 'dom' ),
+                        'year'        => __('2018', 'bd-webninja'),
+						'title'       => __( 'Digital Marketing', 'bd-webninja' ),
+						'description' => __( 'Lorem ipsum dolor sit amet consectetur adipisicing elit.tenetur tempore, cupiditate possimus animi molestias modi voluptas autem ex aspernatur omnis labore, earum voluptatum. Assumenda!', 'bd-webninja' ),
+						'icon'        => __( 'fa fa-graduation-cap', 'bd-webninja' ),
 					),
 				),
 				'title_field' => '{{{ title }}}',
@@ -98,14 +98,14 @@ class Timeline_Widget extends Widget_Base {
         $this->start_controls_section(
                    '_style_content',
                    [
-                       'label' => __( 'Content', 'dom' ),
+                       'label' => __( 'Content', 'bd-webninja' ),
                        'tab'   => Controls_Manager::TAB_STYLE,
                    ]
         );
         $this->add_control(
                    'content_background',
                    [
-                       'label'     => __('Background', 'dom' ),
+                       'label'     => __('Background', 'bd-webninja' ),
                        'type'      => Controls_Manager::COLOR,
                        'selectors' => [
                            '{{WRAPPER}} .main-timeline .timeline-content' => 'background: {{VALUE}}',
@@ -115,7 +115,7 @@ class Timeline_Widget extends Widget_Base {
         $this->add_responsive_control(
                    'Padding',
                    [
-                       'label'         => __( 'Padding Bottom', 'dom' ),
+                       'label'         => __( 'Padding Bottom', 'bd-webninja' ),
                        'type'          => Controls_Manager::SLIDER,
                        'size_units'    => [ 'px', '%' ],
                        'range'         => [
@@ -142,7 +142,7 @@ class Timeline_Widget extends Widget_Base {
         $this->add_responsive_control(
                    'content_margin',
                    [
-                       'label'         => __( 'Margin Bottom', 'dom' ),
+                       'label'         => __( 'Margin Bottom', 'bd-webninja' ),
                        'type'          => Controls_Manager::SLIDER,
                        'size_units'    => [ 'px', '%' ],
                        'range'         => [
@@ -169,14 +169,14 @@ class Timeline_Widget extends Widget_Base {
                    Group_Control_Box_Shadow::get_type(),
                    [
                        'name'      => 'timeline_shadow',
-                       'label'     => __( 'Shadow', 'dom' ),
+                       'label'     => __( 'Shadow', 'bd-webninja' ),
                        'selector'  => '{{WRAPPER}} .main-timeline .timeline-content',
                    ]
         );
         $this->add_control(
                    'bar_heading',
                    [
-                       'label'     => __( 'Bar & Border', 'dom' ),
+                       'label'     => __( 'Bar & Border', 'bd-webninja' ),
                        'type'      => Controls_Manager::HEADING,
                        'separator' => 'before',
                    ]
@@ -184,7 +184,7 @@ class Timeline_Widget extends Widget_Base {
         $this->add_control(
                    'bar_color',
                    [
-                       'label'     => __('Bar Color', 'dom' ),
+                       'label'     => __('Bar Color', 'bd-webninja' ),
                        'type'      => Controls_Manager::COLOR,
                        'scheme'    => [
                            'type'  => Scheme_Color::get_type(),
@@ -198,7 +198,7 @@ class Timeline_Widget extends Widget_Base {
         $this->add_control(
 			'border_color',
 			array(
-				'label'     => __( 'Border Color', 'dom' ),
+				'label'     => __( 'Border Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .main-timeline .timeline-year' => 'background: {{VALUE}}',
@@ -211,14 +211,14 @@ class Timeline_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_style_section_title',
 			array(
-				'label' => __( 'Title', 'dom' ),
+				'label' => __( 'Title', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 		$this->add_control(
 			'title_color',
 			array(
-				'label'     => __( 'Color', 'dom' ),
+				'label'     => __( 'Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => array(
 					'{{WRAPPER}} .main-timeline .title' => 'color: {{VALUE}}',
@@ -229,7 +229,7 @@ class Timeline_Widget extends Widget_Base {
 			Group_Control_Background::get_type(),
 			array(
 				'name'     => 'title_background',
-				'label'    => __( 'Background', 'dom' ),
+				'label'    => __( 'Background', 'bd-webninja' ),
 				'types'    => array( 'classic', 'gradient' ),
                 'selector' => '{{WRAPPER}} .main-timeline .title',
                 // 'separator'=> 'after',
@@ -239,7 +239,7 @@ class Timeline_Widget extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'title_typography',
-				'label'    => __( 'Typography', 'dom' ),
+				'label'    => __( 'Typography', 'bd-webninja' ),
 				'scheme'   => Scheme_Typography::TYPOGRAPHY_2,
                 'selector' => '{{WRAPPER}} .main-timeline .title',
 			)
@@ -248,7 +248,7 @@ class Timeline_Widget extends Widget_Base {
 			Group_Control_Text_Shadow::get_type(),
 			array(
 				'name'     => 'title_shadow',
-				'label'    => __( 'Shadow', 'dom' ),
+				'label'    => __( 'Shadow', 'bd-webninja' ),
 				'selector' => '{{WRAPPER}} .main-timeline .title',
 			)
 		);
@@ -256,14 +256,14 @@ class Timeline_Widget extends Widget_Base {
         $this->start_controls_section(
                    '_style_icon',
                    [
-                       'label' => __( 'Icon', 'dom' ),
+                       'label' => __( 'Icon', 'bd-webninja' ),
                        'tab'   => Controls_Manager::TAB_STYLE,
                    ]
         );
         $this->add_control(
                    'icon_color',
                    [
-                       'label'     => __('Color', 'dom' ),
+                       'label'     => __('Color', 'bd-webninja' ),
                        'type'      => Controls_Manager::COLOR,
                        'selectors' => [
                            '{{WRAPPER}} .main-timeline .timeline-icon' => 'color: {{VALUE}}',
@@ -273,7 +273,7 @@ class Timeline_Widget extends Widget_Base {
         $this->add_responsive_control(
                    'icon_size',
                    [
-                       'label'         => __( 'Icon Size', 'dom' ),
+                       'label'         => __( 'Icon Size', 'bd-webninja' ),
                        'type'          => Controls_Manager::SLIDER,
                        'size_units'    => [ 'px' ],
                        'selectors' => [
@@ -285,14 +285,14 @@ class Timeline_Widget extends Widget_Base {
         $this->start_controls_section(
                    '_style_description',
                    [
-                       'label' => __( 'Description', 'dom' ),
+                       'label' => __( 'Description', 'bd-webninja' ),
                        'tab'   => Controls_Manager::TAB_STYLE,
                    ]
         );
         $this->add_control(
                    'description_color',
                    [
-                       'label'     => __('Color', 'dom' ),
+                       'label'     => __('Color', 'bd-webninja' ),
                        'type'      => Controls_Manager::COLOR,
                        'scheme'    => [
                            'type'  => Scheme_Color::get_type(),
@@ -307,7 +307,7 @@ class Timeline_Widget extends Widget_Base {
                    Group_Control_Typography::get_type(),
                    [
                        'name'      => 'description_typography',
-                       'label'     => __( 'Typography', 'dom' ),
+                       'label'     => __( 'Typography', 'bd-webninja' ),
                        'scheme'    => Scheme_Typography::TYPOGRAPHY_3,
                        'selector'  => '{{WRAPPER}} .main-timeline .description',
                    ]
@@ -317,14 +317,14 @@ class Timeline_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'_style_year',
 			array(
-				'label' => __( 'Year', 'dom' ),
+				'label' => __( 'Year', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 		$this->add_control(
 			'year_color',
 			array(
-				'label'     => __( 'Color', 'dom' ),
+				'label'     => __( 'Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::COLOR,
 				'scheme'    => array(
 					'type'  => Scheme_Color::get_type(),
@@ -339,7 +339,7 @@ class Timeline_Widget extends Widget_Base {
 			Group_Control_Background::get_type(),
 			array(
 				'name'     => 'year_border',
-				'label'    => __( 'Border Color', 'dom' ),
+				'label'    => __( 'Border Color', 'bd-webninja' ),
 				'types'    => array( 'classic', 'gradient' ),
 				'selector' => '{{WRAPPER}} .main-timeline .timeline-year:before',
 			)

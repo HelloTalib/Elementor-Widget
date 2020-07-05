@@ -9,7 +9,7 @@ class Animation_Button_Widget extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Animation Button', 'dom' );
+		return __( 'Animation Button', 'bd-webninja' );
 	}
 
 	public function get_icon() {
@@ -25,41 +25,41 @@ class Animation_Button_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			array(
-				'label' => __( 'Title', 'dom' ),
+				'label' => __( 'Title', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_CONTENT,
 			)
 		);
 		$this->add_control(
 			'button_style',
 			array(
-				'label'   => __( 'Button Style', 'dom' ),
+				'label'   => __( 'Button Style', 'bd-webninja' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'style-1',
 				'options' => array(
-					'style-1' => __( 'Style 1', 'dom' ),
-					'style-2' => __( 'Style 2', 'dom' ),
-					'style-3' => __( 'Style 3', 'dom' ),
-					'style-4' => __( 'Style 4', 'dom' ),
+					'style-1' => __( 'Style 1', 'bd-webninja' ),
+					'style-2' => __( 'Style 2', 'bd-webninja' ),
+					'style-3' => __( 'Style 3', 'bd-webninja' ),
+					'style-4' => __( 'Style 4', 'bd-webninja' ),
 				),
 			)
 		);
 		$this->add_control(
 			'button_text',
 			array(
-				'label'       => __( 'Button Text', 'dom' ),
+				'label'       => __( 'Button Text', 'bd-webninja' ),
 				'type'        => Controls_Manager::TEXT,
-				'default'     => __( 'Click Me', 'dom' ),
-				'placeholder' => __( 'type Button text', 'dom' ),
+				'default'     => __( 'Click Me', 'bd-webninja' ),
+				'placeholder' => __( 'type Button text', 'bd-webninja' ),
 			)
 		);
 
 		$this->add_control(
 			'button_before_text',
 			array(
-				'label'       => __( 'Button Hover Text', 'dom' ),
+				'label'       => __( 'Button Hover Text', 'bd-webninja' ),
 				'type'        => Controls_Manager::TEXT,
-				'default'     => __( 'yeah', 'dom' ),
-				'placeholder' => __( 'type Button text', 'dom' ),
+				'default'     => __( 'yeah', 'bd-webninja' ),
+				'placeholder' => __( 'type Button text', 'bd-webninja' ),
 				'condition'   => array(
 					'button_style' => array( 'style-1' ),
 				),
@@ -69,10 +69,10 @@ class Animation_Button_Widget extends Widget_Base {
 		$this->add_control(
 			'button_after_text',
 			array(
-				'label'       => __( 'Button Hover Text', 'dom' ),
+				'label'       => __( 'Button Hover Text', 'bd-webninja' ),
 				'type'        => Controls_Manager::TEXT,
-				'default'     => __( 'yeah', 'dom' ),
-				'placeholder' => __( 'type Button text', 'dom' ),
+				'default'     => __( 'yeah', 'bd-webninja' ),
+				'placeholder' => __( 'type Button text', 'bd-webninja' ),
 				'condition'   => array(
 					'button_style' => array( 'style-2' ),
 				),
@@ -81,9 +81,9 @@ class Animation_Button_Widget extends Widget_Base {
 		$this->add_control(
 			'button_url',
 			array(
-				'label'         => __( 'Button', 'dom' ),
+				'label'         => __( 'Button', 'bd-webninja' ),
 				'type'          => Controls_Manager::URL,
-				'placeholder'   => __( 'https://example.com', 'dom' ),
+				'placeholder'   => __( 'https://example.com', 'bd-webninja' ),
 				'show_external' => true,
 				'default'       => array(
 					'url'         => '',
@@ -99,14 +99,14 @@ class Animation_Button_Widget extends Widget_Base {
 		$this->start_controls_section(
 			'content_section_style',
 			array(
-				'label' => __( 'Button Style', 'dom' ),
+				'label' => __( 'Button Style', 'bd-webninja' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			)
 		);
 		$this->add_responsive_control(
 			'button_width',
 			array(
-				'label'      => __( 'Width', 'dom' ),
+				'label'      => __( 'Width', 'bd-webninja' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => array( 'px', '%' ),
 				'range'      => array(
@@ -133,22 +133,22 @@ class Animation_Button_Widget extends Widget_Base {
 		$this->add_control(
 			'aligment',
 			array(
-				'label'    => __( 'Aligment', 'dom' ),
+				'label'    => __( 'Aligment', 'bd-webninja' ),
 				'type'     => Controls_Manager::CHOOSE,
 				'default'  => 'center',
 				'options'  => array(
 					'flex-start'   => array(
-						'label' => __( 'Left', 'dom' ),
+						'label' => __( 'Left', 'bd-webninja' ),
 						'icon'  => 'eicon-h-align-left',
 					),
 					'center' => array(
-						'label' => __( 'Center', 'dom' ),
+						'label' => __( 'Center', 'bd-webninja' ),
 						'icon'  => 'eicon-h-align-center',
 					),
 
 					'flex-end'  => array(
 
-						'label' => __( 'Right', 'dom' ),
+						'label' => __( 'Right', 'bd-webninja' ),
 						'icon'  => 'eicon-h-align-right',
 					),
 				),
@@ -162,7 +162,7 @@ class Animation_Button_Widget extends Widget_Base {
 		$this->add_control(
 			'button_tab_heading',
 			array(
-				'label'      => __( 'Button Tab', 'dom' ),
+				'label'      => __( 'Button Tab', 'bd-webninja' ),
 				'show_label' => false,
 				'type'       => Controls_Manager::HEADING,
 				'separator'  => 'before',
@@ -174,13 +174,13 @@ class Animation_Button_Widget extends Widget_Base {
 		$this->start_controls_tab(
 			'normal',
 			array(
-				'label' => __( 'Normal', 'dom' ),
+				'label' => __( 'Normal', 'bd-webninja' ),
 			)
 		);
 		$this->add_control(
 			'title_color',
 			array(
-				'label'     => __( 'Text Color', 'plugin-domain' ),
+				'label'     => __( 'Text Color', 'animation-button' ),
 				'type'      => Controls_Manager::COLOR,
 				'scheme'    => array(
 					'type'  => Scheme_Color::get_type(),
@@ -195,7 +195,7 @@ class Animation_Button_Widget extends Widget_Base {
 			Group_Control_Border::get_type(),
 			array(
 				'name'     => 'button_border',
-				'label'    => __( 'Border', 'dom' ),
+				'label'    => __( 'Border', 'bd-webninja' ),
 				'selector' => '{{WRAPPER}} div[class^="style"] a',
 			)
 		);
@@ -203,7 +203,7 @@ class Animation_Button_Widget extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			array(
 				'name'     => 'button_typography',
-				'label'    => __( 'Typography', 'dom' ),
+				'label'    => __( 'Typography', 'bd-webninja' ),
 				'scheme'   => Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} div[class^="style"] a',
 			)
@@ -212,13 +212,13 @@ class Animation_Button_Widget extends Widget_Base {
 			$this->start_controls_tab(
 				'hover',
 				array(
-					'label' => __( 'Hover', 'dom' ),
+					'label' => __( 'Hover', 'bd-webninja' ),
 				)
 			);
 		$this->add_control(
 			'button_hover_text_color',
 			array(
-				'label'     => __( 'Hover Text Color', 'dom' ),
+				'label'     => __( 'Hover Text Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::COLOR,
 				'scheme'    => array(
 					'type'  => Scheme_Color::get_type(),
@@ -237,7 +237,7 @@ class Animation_Button_Widget extends Widget_Base {
 		$this->add_control(
 			'button_hover_background',
 			array(
-				'label'     => __( 'Hover Background Color', 'dom' ),
+				'label'     => __( 'Hover Background Color', 'bd-webninja' ),
 				'type'      => Controls_Manager::COLOR,
 				'scheme'    => array(
 					'type'  => Scheme_Color::get_type(),
@@ -258,7 +258,7 @@ class Animation_Button_Widget extends Widget_Base {
 			Group_Control_Border::get_type(),
 			array(
 				'name'     => 'button_hover_border',
-				'label'    => __( 'Hover Border', 'dom' ),
+				'label'    => __( 'Hover Border', 'bd-webninja' ),
 				'selector' => '{{WRAPPER}} div[class^="style"] a:hover',
 			)
 		);
